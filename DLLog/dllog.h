@@ -6,6 +6,8 @@
 #ifndef _DLlog_H
 #define _DLlog_H
 #include <assert.h>
+#include <stdio.h>
+#include <stdarg.h>
 #include <string.h>
 
 #define DEBUG_LOG(str,...) DLlogFormat(log_level_debug,__LINE__,__FUNCTION__,__FILE__,str,##__VA_ARGS__)
@@ -70,6 +72,8 @@ typedef enum
 }log_mode_type;
 
 void DLlogFormat(log_level_type log_level, int line, const char* func, const char* file, const char* str,...);
+
+int dlcpMkdir(const char* filePath);
 
 void setIsShowLog(int isShowLog);
 void setIsWriteLog(int isWriteLog);

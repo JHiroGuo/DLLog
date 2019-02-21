@@ -3,8 +3,8 @@
 // Describe : not set
 ////////////////////////////////////
 
-#ifndef _testdllog_H
-#define _testdllog_H
+#ifndef TESTDLLOG_H
+#define TESTDLLOG_H
 
 void testLog();
 
